@@ -1,0 +1,50 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage1.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <script src="../js/jquery-1.7.2.min.js"></script>
+<script src="../js/lightbox.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script src="jquery.cycle2.min.js"></script>
+    <noscript>Your browser does not support JavaScript! or Javascript is turned off</noscript>
+    <link rel="stylesheet" type="text/css" media="all" href="css/css/reset.css" />
+    <link rel="stylesheet" type="text/css" media="all" href="css/css/960.css" />
+    <link rel="stylesheet" type="text/css" media="all" href="css/css/text.css" />
+    <link rel="stylesheet" type="text/css" media="all" href="css/style.css" />
+    <link href="css/lightbox.css" rel="stylesheet" />
+        <link rel="stylesheet" type="text/css" media="all" href="css/formstyle.css" />
+    <title>Welcome to Umar Taufiq's Classified Car Adverts Website</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="container" class="container_16"> 
+            
+            <div id="menu" class="grid_3">
+                <ul id="usernav">
+                    <li><a href="../default.aspx">Home</a></li>
+                    <li><a href="../adverts.aspx">Adverts</a></li>
+                    <li><a href="../createNewAd.aspx">Create Adverts</a></li>
+                    <li><a href="../signup.aspx">Register</a></li>
+                    <li><a href="../userfiles/user.aspx">My Account</a></li>
+                    <li><a href="../adminfiles/admin.aspx">Admin</a></li>
+                </ul>
+            </div>
+       <div id="wrapper">
+            <div id="content" class="grid_13">
+                <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+                </asp:ContentPlaceHolder>
+            </div>
+           </div>
+            <div id="footer" class="grid_16"> 
+                <p>UMAR TAUFIQ</p> <a href="../AdminFiles/admin.aspx">Admin</a>
+            </div> 
+            
+    </div> 
+    </form>
+</body>
+</html>

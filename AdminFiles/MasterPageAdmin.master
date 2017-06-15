@@ -1,0 +1,56 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="../adminfiles/MasterPageAdmin.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <link rel="stylesheet" type="text/css" media="all" href="../css/css/reset.css" />
+    <link rel="stylesheet" type="text/css" media="all" href="../css/css/960.css" />
+    <link rel="stylesheet" type="text/css" media="all" href="../css/css/text.css" />
+    <link rel="stylesheet" type="text/css" media="all" href="../css/style.css" />
+    <title>Welcome to Umar Taufiq's Classified Car Adverts Website</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1
+        {
+            width: 924px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="container" class="container_16"> 
+            
+            <div id="menu" class="grid_3">
+                <ul id="usernav">
+                   <li><a href="../default.aspx">Home</a></li>
+                    <li><a href="../adverts.aspx">Adverts</a></li>
+                    <li><a href="../createNewAd.aspx">Create Adverts</a></li>
+                    <li><a href="../signup.aspx">Register</a></li>
+                    <li><a href="../userfiles/user.aspx">My Account</a></li>
+                    <li><a href="../adminfiles/admin.aspx">Admin</a></li>
+                </ul>
+            </div>
+       
+            <div id="content" class="grid_13">
+                <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+                </asp:ContentPlaceHolder>
+            </div>
+
+            <div id="footer" class="grid_16"> 
+                <div class="grid_3">
+                <p class="auto-style1">
+                    <a href="admin.aspx">Manage Adverts</a>
+                    <a href="manageUsers.aspx">Manage Users</a>
+                    <a href="../createNewAd.aspx">Create New Advert</a>
+                </p>
+            </div>
+            </div> 
+            
+    </div> 
+    </form>
+</body>
+</html>
+
